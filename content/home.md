@@ -1,5 +1,4 @@
 ---
-layout: home
 websiteTitle: Jack Gutteridge
 headerLinks:
   - text: Go to homepage
@@ -20,16 +19,19 @@ socialLinks:
   - text: Email
     href: mailto:jack@kingbrick.co.uk
 footerLinks:
-  - text: By Jack Gutteridge
-    href: /
   - text: RSS feed
-    href: /index.xml
+    href: /rss.xml
   - text: View source on GitHub
     href: https://github.com/jngutteridge/jack-website-2024
+  - text: By Jack Gutteridge
+    href: /
 ---
+# Jack Gutteridge
 
 ![Jack playing an acoustic guitar at an open mic night](/img/jack-guitar-profile.jpg)
 
 Hello! I’m Jack Gutteridge, a musician and software developer living in Leicester in the UK.
 
-This website is a space for my creative projects. I write about music, software, and life.
+This website is a space for me to write about my creative projects. I write about [music](/music), [software](/software), and [life](/life).
+
+You can read more about me and this website on [the about page](/about).

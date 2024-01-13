@@ -32,7 +32,3 @@
     </ul>
   </footer>
 </div>
-
-<svelte:head>
-  <meta name="theme-color" content="#94a3b8">
-</svelte:head>

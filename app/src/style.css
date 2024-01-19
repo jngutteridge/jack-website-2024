@@ -119,4 +119,11 @@
   img.website-image {
     @apply hidden;
   }
+
+  .error-container {
+    h1 {
+      text-align: left;
+      @apply mb-8;
+    }
+  }
 }

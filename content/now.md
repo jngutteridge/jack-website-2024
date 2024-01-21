@@ -3,7 +3,7 @@ title: What I’m doing now
 detail: Last updated January 2024
 ---
 - Living in Leicestershire with my beautiful girlfriend.
-- Working remotely for an internet security leader as front-end developer.
+- Working remotely as a front-end developer.
 - Attending open mics around Leicester, Hinckley and Loughborough.
 - Enjoying coding websites and blogging on this website.
 

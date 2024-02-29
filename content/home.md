@@ -16,8 +16,8 @@ socialLinks:
     href: https://www.threads.net/@jackgutts
   - text: Instagram
     href: https://instagram.com/jackgutts
-  - text: Email
-    href: mailto:jack@kingbrick.co.uk
+  - text: More links
+    href: /links
 footerLinks:
   - text: RSS feed
     href: /rss.xml

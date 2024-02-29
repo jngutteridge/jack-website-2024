@@ -126,4 +126,18 @@
       @apply mb-8;
     }
   }
+
+  .links-container {
+    h2 {
+      @apply text-xl text-slate-800 mt-10 mb-4;
+    }
+
+    dd {
+      @apply mb-4;
+    }
+
+    dt a {
+      @apply text-slate-600 underline;
+    }
+  }
 }

@@ -49,7 +49,7 @@ contributionLinks:
   - href: https://www.polyphonics.co.uk/
     title: Polyphonics Choir
     description: If you want to sing, that’s all that matters!
-  - href: https://www.facebook.com/countfestchorus
-    title: Countesthrope Festival Chorus
+  - href: https://www.countfestchorus.co.uk/
+    title: Countesthorpe Festival Chorus
     description: Providing an opportunity to sing, learn and perform.
 ---

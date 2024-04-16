@@ -1,10 +1,10 @@
 import { error } from '@sveltejs/kit';
 import type { SvelteComponent } from 'svelte';
 
-export async function load({ params: { page } }) {
+export async function load({ data: { pageSlug } }) {
 
   try {
-    const pageContent = await import(`../../../../content/${page}.md`);
+    const pageContent = await import(`../../../../content/${pageSlug}.md`);
     const Content = pageContent.default;
     const { title, detail } = pageContent.metadata;
 

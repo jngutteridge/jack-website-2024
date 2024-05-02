@@ -17,6 +17,9 @@ links:
   - href: https://hachyderm.io/@jackgutts
     title: Mastodon
     description: Where I share more about my coding processes.
+  - href: https://twitter.com/jngutteridge
+    title: Twitter
+    description: A broken social media website that still exists…
   - href: https://open.spotify.com/user/jack7c4
     title: Spotify
     description: Have you ever listened to Biffy Clyro?
@@ -30,9 +33,9 @@ projectLinks:
   - href: https://polarbites.bandcamp.com/
     title: Polar Bites
     description: Music from myself. I one day hope to play this stuff live with a band.
-  - href: https://www.kingbrick.co.uk/
-    title: King Brick
-    description: Old loud noises hoping to make new things.
+  - href: https://www.leicesteropenmics.co.uk/
+    title: Leicester Open Mics
+    description: Find an open mic in the Leicestershire area.
   - href: https://www.instagram.com/veejogames/
     title: Veejo Games
     description: Alleged art and games development.
@@ -42,10 +45,9 @@ projectLinks:
   - href: https://www.bespokemedia.net/
     title: Bespoke Media
     description: A home for my coding projects.
-  - href: https://openmics.kingbrick.co.uk/
-    title: Leicester Open Mics
-    description: Find an open mic in the Leicestershire area.
-contributionLinks:
+  - href: https://www.kingbrick.co.uk/
+    title: King Brick
+    description: Old loud noises hoping to make new things.
   - href: https://www.polyphonics.co.uk/
     title: Polyphonics Choir
     description: If you want to sing, that’s all that matters!

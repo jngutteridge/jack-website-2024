@@ -1,6 +1,6 @@
 <script>
   export let data;
-  $: ({ title, detail, links, projectLinks, contributionLinks } = data);
+  $: ({ title, detail, links, projectLinks } = data);
 </script>
 <div class="container links-container">
   <h1 class="main-heading">{ title }</h1>
@@ -14,13 +14,6 @@
   <h2>Projects</h2>
   <dl>
   {#each projectLinks as {href, title, description}}
-    <dt><a {href}>{title}</a></dt>
-    <dd>{description}</dd>
-  {/each}
-  </dl>
-  <h2>Contributions</h2>
-  <dl>
-  {#each contributionLinks as {href, title, description}}
     <dt><a {href}>{title}</a></dt>
     <dd>{description}</dd>
   {/each}

@@ -12,19 +12,13 @@ headerLinks:
 socialLinks:
   - text: Mastodon
     href: https://hachyderm.io/@jackgutts
-  - text: Threads
-    href: https://www.threads.net/@jackgutts
   - text: Instagram
     href: https://instagram.com/jackgutts
+footerLinks:
   - text: More links
     href: /links
-footerLinks:
   - text: RSS feed
     href: /rss.xml
-  - text: View source on GitHub
-    href: https://github.com/jngutteridge/jack-website-2024
-  - text: By Jack Gutteridge
-    href: /
 ---
 # Jack Gutteridge
 
@@ -34,4 +28,4 @@ Hello! I’m Jack Gutteridge, a musician and software developer living in Leices
 
 This website is a space for me to write about my creative projects. I write about [music](/music), [software](/software), and [life](/life).
 
-You can read more about me and this website on [the about page](/about).
+You can read more about me and this website on [the about page](/about) and see what I’m up to at the moment on [my now page](/now).

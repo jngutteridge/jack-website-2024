@@ -1,4 +1,6 @@
-import { error } from "@sveltejs/kit";
+interface FileImport {
+	metadata: { [key: string]: string };
+}
 
 export const fetchPosts = async () => {
 	const files = import.meta.glob('/../content/posts/*.md');
@@ -6,7 +8,7 @@ export const fetchPosts = async () => {
 
 	const posts = await Promise.all(
 		iterablePostFiles.map(async ([path, resolver]) => {
-			const { metadata } = (await resolver());
+			const { metadata } = (await resolver() as FileImport);
 			const date = new Date(metadata.date);
 			const slug = metadata.slug as string ?? path.slice(21, -3);
 			const href = date.toLocaleDateString('en-GB', { dateStyle: 'short' }).split('/').concat('').reverse().concat([slug, '']).join('/');
@@ -36,7 +38,7 @@ export const fetchAllForFeed = async () => {
 
 	const posts = await Promise.all(
 		iterablePostFiles.map(async ([path, resolver]) => {
-			const file = (await resolver());
+			const file = (await resolver() as FileImport);
 			const { metadata } = file;
 			const date = new Date(metadata.date);
 			const slug = metadata.slug as string ?? path.slice(21, -3);
@@ -62,15 +64,45 @@ export const fetchAllForFeed = async () => {
 	});
 }
 
-export const fetchPostContent = async (path: string) => {
-	const files = import.meta.glob('/../content/posts/*.md');
+export const fetchReviews = async () => {
+	const files = import.meta.glob('/../content/reviews/*.md');
 	const iterablePostFiles = Object.entries(files);
 
-	const file = iterablePostFiles.find(async ([filePath]) => filePath === path);
+	const reviews = await Promise.all(
+		iterablePostFiles.map(async ([path, resolver]) => {
+			const { metadata } = (await resolver() as FileImport);
+			const title = getReviewTitle(
+				metadata.category as string,
+				metadata.title as string,
+				metadata.author as string || metadata.artist as string || metadata.venue as string + ' ' + metadata.location as string,
+			);
+			const date = new Date(metadata['review_date']);
+			const slug = metadata.slug as string ?? path.slice(23, -3);
+			const href = ['', 'reviews', slug, ''].join('/');
+			const categorySlug = (metadata.category as string).toLocaleLowerCase()
 
-	if (!file) {
-		throw error(404);
-	}
+			return {
+				slug,
+				date,
+				formattedDate: date.toLocaleDateString('en-GB', { dateStyle: 'long' }),
+				title,
+				category: metadata.category as string + ' reviews',
+				categorySlug,
+				categoryHref: `/reviews/${categorySlug}/`,
+				href,
+				path,
+				id: path.slice(19, 22),
+				imgSrc: `/img/reviews/${slug}.jpg`,
+			};
+		})
+	);
 
-	return file[1]();
-}
+	return reviews.sort((a, b) => {
+		return b.date.valueOf() - a.date.valueOf();
+	});
+};
+
+const getReviewTitle = (category: string, title: string, subtitle: string) => {
+	const contraction = (category == 'Live') ? 'at' : 'by';
+	return `${title} ${contraction} ${subtitle}`;
+};

@@ -5,13 +5,13 @@ const categoryTitles: { [key: string]: string } = {
   music: 'Music',
   software: 'Software',
   life: 'Life',
-}
+};
 
 export async function load({ params: { list } }) {
   const posts = await fetchPosts();
 
   const categoryTitle = categoryTitles[list];
-  
+
   let categoryPosts;
   if (list === 'all') {
     categoryPosts = posts;

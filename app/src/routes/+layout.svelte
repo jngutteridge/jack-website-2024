@@ -3,8 +3,11 @@
 
   export let data;
   const { websiteTitle, headerLinks, socialLinks, footerLinks } = data;
+  $: ({ showSocialImage } = data);
 </script>
-<img src="/img/jack-guitar-profile.jpg" alt="" class="website-image"/>
+{#if showSocialImage}
+  <img src="/img/jack-guitar-profile.jpg" alt="" class="website-image"/>
+{/if}
 <div class="main-container">
   <main>
     <slot />

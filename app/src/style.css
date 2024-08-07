@@ -112,6 +112,32 @@
     }
   }
 
+  ul.review-list {
+    @apply flex flex-col gap-6;
+
+    img {
+      @apply -order-1 w-16 h-16;
+    }
+
+    li {
+      @apply flex flex-row gap-4;
+    }
+
+    .wrapper {
+      h2 {
+        @apply text-xl text-pretty;
+      }
+
+      span {
+        @apply text-slate-500 text-sm;
+
+        a {
+          @apply underline;
+        }
+      }
+    }
+  }
+
   article.content {
     @apply prose mx-auto;
   }
@@ -139,5 +165,9 @@
     dt a {
       @apply text-slate-600 underline;
     }
+  }
+
+  img.review-image {
+    @apply max-w-full mx-auto pt-6 pb-2;
   }
 }

@@ -1,11 +1,10 @@
 ---
-title: ‘Flowers’ demo
+title: Flowers
 date: 2024-06-30
 tags: 
   - Alternative rock
   - Demo
   - Songwriting
-category: Music
 ---
 I needed a track to start off my new album. Called Connections, my second album is a celebration of friendships.
 

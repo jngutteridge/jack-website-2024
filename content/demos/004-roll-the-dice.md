@@ -1,11 +1,10 @@
 ---
-title: ‘Roll the Dice’ demo
+title: Roll the Dice
 date: 2023-10-27
 tags:
   - Alternative rock
   - Demo
   - Songwriting
-category: Music
 ---
 King Brick was a three-piece band I played in with my best friend and my brother during my time at college. We gigged from 2008 to 2013 around Leicester.
 

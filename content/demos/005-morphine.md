@@ -1,11 +1,10 @@
 ---
-title: ‘Morphine’ demo
+title: Morphine
 date: 2024-03-09
 tags: 
   - Alternative rock
   - Demo
   - Songwriting
-category: Music
 ---
 Morphine was nearly a track on my first album. It carries on from the idea of grief and being helped back into reality. The irony is that sometimes the friends who help you back are also going through some horrible things.
 

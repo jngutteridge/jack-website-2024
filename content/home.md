@@ -26,6 +26,6 @@ footerLinks:
 
 Hello! I’m Jack Gutteridge, a musician and software developer living in Leicester in the UK.
 
-This website is a space for me to write about my creative projects. I write about [music](/music), [software](/software), and [life](/life).
+This website is a space for me to write about [music](/music), [software](/software), and [life](/life). I also post [reviews](/reviews) and [demos](/demos).
 
 You can read more about me and this website on [the about page](/about) and see what I’m up to at the moment on [my now page](/now).

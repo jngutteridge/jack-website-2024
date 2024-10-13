@@ -106,3 +106,33 @@ const getReviewTitle = (category: string, title: string, subtitle: string) => {
 	const contraction = (category == 'Live') ? 'at' : 'by';
 	return `${title} ${contraction} ${subtitle}`;
 };
+
+
+export const fetchDemos = async () => {
+	const files = import.meta.glob('/../content/demos/*.md');
+	const iterablePostFiles = Object.entries(files);
+
+	const demos = await Promise.all(
+		iterablePostFiles.map(async ([path, resolver]) => {
+			const { metadata } = (await resolver() as FileImport);
+			const title = metadata.title as string
+			const date = new Date(metadata['date']);
+			const slug = metadata.slug as string ?? path.slice(21, -3);
+			const href = ['', 'demos', slug, ''].join('/');
+
+			return {
+				slug,
+				date,
+				formattedDate: date.toLocaleDateString('en-GB', { dateStyle: 'long' }),
+				title,
+				href,
+				path,
+				id: path.slice(17, 20),
+			};
+		})
+	);
+
+	return demos.sort((a, b) => {
+		return b.date.valueOf() - a.date.valueOf();
+	});
+};

@@ -138,6 +138,28 @@
     }
   }
 
+  ul.demos-list {
+    @apply flex flex-col gap-6;
+
+    li {
+      @apply flex flex-row gap-4;
+    }
+
+    .wrapper {
+      h2 {
+        @apply text-xl text-pretty;
+      }
+
+      span {
+        @apply text-slate-500 text-sm;
+
+        a {
+          @apply underline;
+        }
+      }
+    }
+  }
+
   article.content {
     @apply prose mx-auto;
   }

@@ -1,4 +1,4 @@
-export async function load({ data: { posts, reviews } }) {
+export async function load({ data: { posts, reviews, demos } }) {
   const pageContent = await import('../../../content/home.md');
   const Content = pageContent.default;
 
@@ -6,5 +6,6 @@ export async function load({ data: { posts, reviews } }) {
     Content,
     posts,
     reviews,
+    demos,
   };
 }

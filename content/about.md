@@ -13,4 +13,4 @@ For my musical projects I use [SoundCloud](https://soundcloud.com/jackgutts) to 
 
 For my coding project I use [GitHub](https://github.com/jngutteridge) including to [host the code for this blog](https://github.com/jngutteridge/jack-website-2024). I sometimes work under the [Bespoke Media](https://www.bespokemedia.net/) brand for small businesses and organisations.
 
-I’m active on [Instagram](https://www.instagram.com/jackgutts/) and [Mastodon](https://hachyderm.io/@jackgutts). You can also contact me by [email](mailto:jack@kingbrick.co.uk) or find me on one of my [other links](/links).
+I’m active on [Bluesky](https://bsky.app/profile/jng.me.uk) and [Instagram](https://www.instagram.com/jackgutts/). You can also contact me by [email](mailto:jack@kingbrick.co.uk) or find me on one of my [other links](/links).

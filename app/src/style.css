@@ -28,7 +28,7 @@
     }
 
     footer {
-      @apply flex justify-center gap-x-6 py-4 px-6 text-slate-500 text-sm;
+      @apply flex flex-col md:flex-row justify-center gap-x-6 gap-y-2 py-4 px-6 text-slate-500 text-sm;
 
       ul {
         @apply flex gap-x-6 gap-y-2 justify-center flex-wrap;

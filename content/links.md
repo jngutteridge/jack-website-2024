@@ -8,6 +8,9 @@ links:
   - href: https://www.facebook.com/jackgutteridge
     title: Facebook
     description: Occasional public updates about projects and open mics in Leicester.
+  - href: https://bsky.app/profile/jng.me.uk
+    title: Bluesky
+    description: We hope that this platform takes off…
   - href: https://www.threads.net/@jackgutts
     title: Threads
     description: Irregular updates wishing that Twitter still existed.
@@ -17,9 +20,6 @@ links:
   - href: https://hachyderm.io/@jackgutts
     title: Mastodon
     description: Where I share more about my coding processes.
-  - href: https://twitter.com/jngutteridge
-    title: Twitter
-    description: A broken social media website that still exists…
   - href: https://open.spotify.com/user/jack7c4
     title: Spotify
     description: Have you ever listened to Biffy Clyro?

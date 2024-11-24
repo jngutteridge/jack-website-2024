@@ -10,10 +10,12 @@ headerLinks:
   - text: Contact me
     href: mailto:jack@kingbrick.co.uk
 socialLinks:
-  - text: Mastodon
-    href: https://hachyderm.io/@jackgutts
+  - text: Bluesky
+    href: https://bsky.app/profile/jng.me.uk
   - text: Instagram
     href: https://instagram.com/jackgutts
+  - text: Mastodon
+    href: https://hachyderm.io/@jackgutts
 footerLinks:
   - text: More links
     href: /links

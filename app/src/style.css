@@ -162,6 +162,10 @@
 
   article.content {
     @apply prose mx-auto;
+
+    img {
+      @apply mx-auto;
+    }
   }
 
   img.website-image {

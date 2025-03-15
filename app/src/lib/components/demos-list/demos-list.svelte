@@ -1,3 +1,8 @@
+<script>
+  /** @type {{children?: import('svelte').Snippet}} */
+  let { children } = $props();
+</script>
+
 <ul class="demos-list">
-  <slot />
+  {@render children?.()}
 </ul>

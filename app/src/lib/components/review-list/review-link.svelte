@@ -1,11 +1,23 @@
 <script lang="ts">
-  export let title: string;
-  export let category: string;
-  export let formattedDate: string;
-  export let href: string;
-  export let showCategory = true;
-  export let categoryHref: string;
-  export let imgSrc: string;
+  interface Props {
+    title: string;
+    category: string;
+    formattedDate: string;
+    href: string;
+    showCategory?: boolean;
+    categoryHref: string;
+    imgSrc: string;
+  }
+
+  let {
+    title,
+    category,
+    formattedDate,
+    href,
+    showCategory = true,
+    categoryHref,
+    imgSrc
+  }: Props = $props();
 </script>
 <li>
   <div class="wrapper">

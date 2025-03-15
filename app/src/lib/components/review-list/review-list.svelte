@@ -1,3 +1,8 @@
+<script>
+  /** @type {{children?: import('svelte').Snippet}} */
+  let { children } = $props();
+</script>
+
 <ul class="review-list">
-  <slot />
+  {@render children?.()}
 </ul>

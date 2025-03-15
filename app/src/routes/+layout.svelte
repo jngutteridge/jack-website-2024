@@ -1,16 +1,21 @@
 <script lang="ts">
   import '../style.css';
 
-  export let data;
+  interface Props {
+    data: any;
+    children?: import('svelte').Snippet;
+  }
+
+  let { data, children }: Props = $props();
   const { websiteTitle, headerLinks, socialLinks, footerLinks } = data;
-  $: ({ showSocialImage } = data);
+  let { showSocialImage } = $derived(data);
 </script>
 {#if showSocialImage}
   <img src="/img/jack-guitar-profile.jpg" alt="" class="website-image"/>
 {/if}
 <div class="main-container">
   <main>
-    <slot />
+    {@render children?.()}
   </main>
   <header>
     <h1><a href="/">{websiteTitle}</a></h1>

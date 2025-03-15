@@ -1,8 +1,9 @@
 <script>
 	import { DemosLink, DemosList } from '$lib/components/demos-list';
 
-  export let data;
-  $: ({ demos, count } = data);
+  /** @type {{data: any}} */
+  let { data } = $props();
+  let { demos, count } = $derived(data);
 </script>
 <div class="container">
   <h1 class="main-heading">Demos</h1>

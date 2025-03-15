@@ -3,7 +3,8 @@
 	import { ReviewLink, ReviewList } from '$lib/components/review-list'
 	import { DemosLink, DemosList } from '$lib/components/demos-list'
 
-  export let data;
+  /** @type {{data: any}} */
+  let { data } = $props();
   const { posts, reviews, demos, Content, websiteTitle } = data;
 </script>
 <article class="home">

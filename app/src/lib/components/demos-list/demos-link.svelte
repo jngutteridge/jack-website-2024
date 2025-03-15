@@ -1,7 +1,11 @@
 <script lang="ts">
-  export let title: string;
-  export let formattedDate: string;
-  export let href: string;
+  interface Props {
+    title: string;
+    formattedDate: string;
+    href: string;
+  }
+
+  let { title, formattedDate, href }: Props = $props();
 </script>
 <li>
   <div class="wrapper">

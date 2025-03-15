@@ -1,9 +1,10 @@
 <script>
 	import { ReviewLink, ReviewList } from '$lib/components/review-list';
 
-  export let data;
-  $: ({ title, reviews, slug } = data);
-  $: count = reviews.length;
+  /** @type {{data: any}} */
+  let { data } = $props();
+  let { title, reviews, slug } = $derived(data);
+  let count = $derived(reviews.length);
   const showCategory = false;
 </script>
 <div class="container">

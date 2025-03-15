@@ -1,10 +1,11 @@
 <script>
 	import { PostLink, PostList } from '$lib/components/post-list'
 
-  export let data;
-  $: count = posts.length;
-  $: pageCategory  = data.categorySlug;
-  $: ({ categoryTitle, posts } = data);
+  /** @type {{data: any}} */
+  let { data } = $props();
+  let { categoryTitle, posts } = $derived(data);
+  let count = $derived(posts.length);
+  let pageCategory  = $derived(data.categorySlug);
 </script>
 <div class="container">
   <h1 class="main-heading">{categoryTitle}</h1>

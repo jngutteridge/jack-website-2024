@@ -1,8 +1,9 @@
 <script>
 	import { ReviewLink, ReviewList } from '$lib/components/review-list';
 
-  export let data;
-  $: ({ books, live, music, count } = data);
+  /** @type {{data: any}} */
+  let { data } = $props();
+  let { books, live, music, count } = $derived(data);
   const showCategory = false;
 </script>
 <div class="container">

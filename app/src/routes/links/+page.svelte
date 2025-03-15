@@ -1,6 +1,7 @@
 <script>
-  export let data;
-  $: ({ title, detail, links, projectLinks } = data);
+  /** @type {{data: any}} */
+  let { data } = $props();
+  let { title, detail, links, projectLinks } = $derived(data);
 </script>
 <div class="container links-container">
   <h1 class="main-heading">{ title }</h1>

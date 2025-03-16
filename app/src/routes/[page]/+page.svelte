@@ -1,17 +1,16 @@
 <script>
-  /** @type {{data: any}} */
   let { data } = $props();
   let { title, detail, Content } = $derived(data);
 </script>
-<div class="container">
-  <h1 class="main-heading">{title}</h1>
-  {#if detail}<span class="main-details">{detail}</span>{/if}
+<div class="max-w-[65ch] mx-auto">
+  <h1 class="text-3xl pt-6 text-center max-w-[35ch] mx-auto text-balance">{title}</h1>
+  {#if detail}<span class="text-slate-500 text-sm pt-2 pb-6 text-center block">{detail}</span>{/if}
 </div>
-<article class="content">
+<article class="content prose mx-auto">
   <Content />
 </article>
-<div class="container">
-  <a class="main-next-link" href="/">Go back to homepage</a>
+<div class="max-w-[65ch] mx-auto">
+  <a class="text-slate-500 my-6 underline block" href="/">Go back to homepage</a>
 </div>
 
 <svelte:head>

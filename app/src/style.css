@@ -1,218 +1,45 @@
 @import 'tailwindcss';
-@config '../tailwind.config.js';
+@plugin '@tailwindcss/typography';
 
-@utility main-container {
-  @apply flex flex-col min-h-screen;
-  font-family: Arial, Helvetica, sans-serif;
+@theme {
+  --font-sans: 'Arial', 'Helvetica', sans-serif;
+}
 
-  header {
-    order: -1;
-    @apply lg:flex text-center lg:text-left flex-row py-4 px-6;
-
-    h1 {
-      @apply text-xl grow mb-2;
-    }
-
-    nav {
-      @apply flex items-center justify-center text-slate-500 text-sm;
-      ul {
-        @apply flex gap-x-6 gap-y-2 justify-center flex-wrap;
-
-        li:first-of-type {
-          @apply hidden lg:block;
-        }
-      }
-    }
-  }
-
-  footer {
-    @apply flex flex-col md:flex-row justify-center gap-x-6 gap-y-2 py-4 px-6 text-slate-500 text-sm;
-
-    ul {
-      @apply flex gap-x-6 gap-y-2 justify-center flex-wrap;
-    }
-  }
-
-  main {
-    @apply py-4 px-6 grow;
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
   }
 }
 
-@utility home {
-  &article {
-    @apply max-w-[65ch] mx-auto;
-
-    &:after {
-      content: '';
-      display: block;
-      clear: both;
-    }
-
-    a {
-      @apply underline;
-    }
-
-    img {
-      width: 14rem;
-      @apply mx-auto lg:mr-4 mb-6 lg:float-left;
-    }
-
-    h1:first-of-type {
-      @apply hidden;
-    }
-
-    p:not(:first-of-type) {
-      @apply mb-4 text-pretty;
-    }
-  }
-}
-
-@utility container {
-  @apply max-w-[65ch] mx-auto;
-}
-
-@utility main-heading {
-  &h2 {
-    @apply text-2xl pt-8 pb-6;
-    @apply text-slate-500;
+article.home {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
   }
 
-  &h1 {
-    @apply text-3xl pt-6 text-center max-w-[35ch] mx-auto text-balance;
+  a {
+    @apply underline;
   }
-}
 
-@utility content-heading {
-  &h1 {
-    @apply text-5xl pt-6 text-center max-w-[35ch] mx-auto text-balance;
+  img {
+    width: 14rem;
+    @apply mx-auto lg:mr-4 mb-6 lg:float-left;
   }
-}
 
-@utility main-details {
-  &span {
-    @apply text-slate-500 text-sm pt-2 pb-6 text-center block;
-
-    a {
-      @apply underline;
-    }
-  }
-}
-
-@utility main-next-link {
-  &a {
-    @apply text-slate-500 my-6 underline block;
-  }
-}
-
-@utility post-list {
-  &ul {
-    @apply flex flex-col gap-6;
-
-    h2 {
-      @apply text-xl text-pretty;
-    }
-
-    span {
-      @apply text-slate-500 text-sm;
-
-      a {
-        @apply underline;
-      }
-    }
-  }
-}
-
-@utility review-list {
-  &ul {
-    @apply flex flex-col gap-6;
-
-    img {
-      @apply -order-1 w-16 h-16;
-    }
-
-    li {
-      @apply flex flex-row gap-4;
-    }
-
-    .wrapper {
-      h2 {
-        @apply text-xl text-pretty;
-      }
-
-      span {
-        @apply text-slate-500 text-sm;
-
-        a {
-          @apply underline;
-        }
-      }
-    }
-  }
-}
-
-@utility demos-list {
-  &ul {
-    @apply flex flex-col gap-6;
-
-    li {
-      @apply flex flex-row gap-4;
-    }
-
-    .wrapper {
-      h2 {
-        @apply text-xl text-pretty;
-      }
-
-      span {
-        @apply text-slate-500 text-sm;
-
-        a {
-          @apply underline;
-        }
-      }
-    }
-  }
-}
-
-@utility content {
-  &article {
-    @apply prose mx-auto;
-
-    img {
-      @apply mx-auto;
-    }
-  }
-}
-
-@utility website-image {
-  &img {
+  h1:first-of-type {
     @apply hidden;
   }
-}
 
-@utility error-container {
-  h1 {
-    text-align: left;
-    @apply mb-8;
-  }
-}
-
-@utility links-container {
-  h2 {
-    @apply text-xl text-slate-800 mt-10 mb-4;
-  }
-
-  dd {
+  p:not(:first-of-type) {
     @apply mb-4;
   }
-
-  dt a {
-    @apply text-slate-600 underline;
-  }
 }
 
-@utility review-image {
-  &img {
-    @apply max-w-full mx-auto pt-6 pb-2;
+.content {
+  img {
+    @apply mx-auto;
   }
+
+  @apply prose-h1:font-normal prose-h2:font-normal prose-h3:font-normal prose-h4:font-normal;
 }

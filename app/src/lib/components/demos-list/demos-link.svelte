@@ -8,8 +8,6 @@
   let { title, formattedDate, href }: Props = $props();
 </script>
 <li>
-  <div class="wrapper">
-    <h2><a {href}>{title}</a></h2>
-      <span>Posted on {formattedDate}</span>
-  </div>
+  <h2 class="text-xl text-pretty"><a {href}>{title}</a></h2>
+  <span class="text-slate-500 text-sm">Posted on {formattedDate}</span>
 </li>

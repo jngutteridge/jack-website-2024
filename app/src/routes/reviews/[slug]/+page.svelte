@@ -4,14 +4,14 @@
   let { title, formattedDate, category, categoryHref, imgSrc } = $derived(data.review);
   let Content = $derived(data.Content);
 </script>
-<h1 class="content-heading">{title}</h1>
-<img class="review-image" src={imgSrc} alt="" />
-<span class="main-details">Posted in <a href={categoryHref}>{category}</a> on <date>{formattedDate}</date></span>
-<article class="content">
+<h1 class="text-5xl pt-6 text-center max-w-[35ch] mx-auto text-balance">{title}</h1>
+<img class="max-w-full mx-auto pt-6 pb-2" src={imgSrc} alt="" />
+<span class="text-slate-500 text-sm pt-2 pb-6 text-center block">Posted in <a href={categoryHref} class="underline">{category}</a> on <date>{formattedDate}</date></span>
+<article class="content prose mx-auto">
   <Content />
 </article>
-<div class="container">
-  <a class="main-next-link" href="/">Go back to homepage</a>
+<div class="max-w-[65ch] mx-auto">
+  <a class="text-slate-500 my-6 underline block" href="/">Go back to homepage</a>
 </div>
 
 <svelte:head>

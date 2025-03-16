@@ -18,6 +18,6 @@
   }: Props = $props();
 </script>
 <li>
-  <h2><a {href}>{title}</a></h2>
-  <span>Posted {#if showCategory} in <a href="/{categorySlug}">{category}</a> {/if} on {formattedDate}</span>
+  <h2 class="text-xl text-pretty"><a {href}>{title}</a></h2>
+  <span class="text-slate-500 text-sm">Posted {#if showCategory} in <a href="/{categorySlug}" class="underline">{category}</a> {/if} on {formattedDate}</span>
 </li>

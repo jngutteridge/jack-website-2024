@@ -3,6 +3,6 @@
   let { children } = $props();
 </script>
 
-<ul class="demos-list">
+<ul class="flex flex-col gap-6">
   {@render children?.()}
 </ul>

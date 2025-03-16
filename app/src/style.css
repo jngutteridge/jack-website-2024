@@ -1,50 +1,49 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@config '../tailwind.config.js';
 
-@layer components {
-  .main-container {
-    @apply flex flex-col min-h-screen;
-    font-family: Arial, Helvetica, sans-serif;
+@utility main-container {
+  @apply flex flex-col min-h-screen;
+  font-family: Arial, Helvetica, sans-serif;
 
-    header {
-      order: -1;
-      @apply lg:flex text-center lg:text-left flex-row py-4 px-6;
+  header {
+    order: -1;
+    @apply lg:flex text-center lg:text-left flex-row py-4 px-6;
 
-      h1 {
-        @apply text-xl grow mb-2;
-      }
+    h1 {
+      @apply text-xl grow mb-2;
+    }
 
-      nav {
-        @apply flex items-center justify-center text-slate-500 text-sm;
-          ul {
-          @apply flex gap-x-6 gap-y-2 justify-center flex-wrap;
+    nav {
+      @apply flex items-center justify-center text-slate-500 text-sm;
+      ul {
+        @apply flex gap-x-6 gap-y-2 justify-center flex-wrap;
 
-          li:first-of-type {
-            @apply hidden lg:block;
-          }
+        li:first-of-type {
+          @apply hidden lg:block;
         }
       }
     }
+  }
 
-    footer {
-      @apply flex flex-col md:flex-row justify-center gap-x-6 gap-y-2 py-4 px-6 text-slate-500 text-sm;
+  footer {
+    @apply flex flex-col md:flex-row justify-center gap-x-6 gap-y-2 py-4 px-6 text-slate-500 text-sm;
 
-      ul {
-        @apply flex gap-x-6 gap-y-2 justify-center flex-wrap;
-      }
-    }
-
-    main {
-      @apply py-4 px-6 grow;
+    ul {
+      @apply flex gap-x-6 gap-y-2 justify-center flex-wrap;
     }
   }
 
-  article.home {
+  main {
+    @apply py-4 px-6 grow;
+  }
+}
+
+@utility home {
+  &article {
     @apply max-w-[65ch] mx-auto;
 
     &:after {
-      content: "";
+      content: '';
       display: block;
       clear: both;
     }
@@ -66,37 +65,47 @@
       @apply mb-4 text-pretty;
     }
   }
+}
 
-  .container {
-    @apply max-w-[65ch] mx-auto;
-  }
+@utility container {
+  @apply max-w-[65ch] mx-auto;
+}
 
-  h2.main-heading {
+@utility main-heading {
+  &h2 {
     @apply text-2xl pt-8 pb-6;
     @apply text-slate-500;
   }
 
-  h1.main-heading {
+  &h1 {
     @apply text-3xl pt-6 text-center max-w-[35ch] mx-auto text-balance;
   }
+}
 
-  h1.content-heading {
+@utility content-heading {
+  &h1 {
     @apply text-5xl pt-6 text-center max-w-[35ch] mx-auto text-balance;
   }
+}
 
-  span.main-details {
+@utility main-details {
+  &span {
     @apply text-slate-500 text-sm pt-2 pb-6 text-center block;
 
     a {
       @apply underline;
     }
   }
+}
 
-  a.main-next-link {
+@utility main-next-link {
+  &a {
     @apply text-slate-500 my-6 underline block;
   }
+}
 
-  ul.post-list {
+@utility post-list {
+  &ul {
     @apply flex flex-col gap-6;
 
     h2 {
@@ -111,8 +120,10 @@
       }
     }
   }
+}
 
-  ul.review-list {
+@utility review-list {
+  &ul {
     @apply flex flex-col gap-6;
 
     img {
@@ -137,8 +148,10 @@
       }
     }
   }
+}
 
-  ul.demos-list {
+@utility demos-list {
+  &ul {
     @apply flex flex-col gap-6;
 
     li {
@@ -159,41 +172,47 @@
       }
     }
   }
+}
 
-  article.content {
+@utility content {
+  &article {
     @apply prose mx-auto;
 
     img {
       @apply mx-auto;
     }
   }
+}
 
-  img.website-image {
+@utility website-image {
+  &img {
     @apply hidden;
   }
+}
 
-  .error-container {
-    h1 {
-      text-align: left;
-      @apply mb-8;
-    }
+@utility error-container {
+  h1 {
+    text-align: left;
+    @apply mb-8;
+  }
+}
+
+@utility links-container {
+  h2 {
+    @apply text-xl text-slate-800 mt-10 mb-4;
   }
 
-  .links-container {
-    h2 {
-      @apply text-xl text-slate-800 mt-10 mb-4;
-    }
-
-    dd {
-      @apply mb-4;
-    }
-
-    dt a {
-      @apply text-slate-600 underline;
-    }
+  dd {
+    @apply mb-4;
   }
 
-  img.review-image {
+  dt a {
+    @apply text-slate-600 underline;
+  }
+}
+
+@utility review-image {
+  &img {
     @apply max-w-full mx-auto pt-6 pb-2;
   }
 }

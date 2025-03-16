@@ -1,5 +1,7 @@
 import { fetchAllForFeed } from '$lib/utils';
 import { PUBLIC_WEBSITE_HOSTNAME } from '$env/static/public'
+import { render } from 'svelte/server';
+import type { Component } from 'svelte';
 
 export async function GET({ setHeaders }) {
   setHeaders({
@@ -8,10 +10,10 @@ export async function GET({ setHeaders }) {
 
   const posts = await fetchAllForFeed();
 
-  return new Response(render(posts));
+  return new Response(generateFeed(posts));
 }
 
-const render = (posts: {
+const generateFeed = (posts: {
   slug: string;
   date: Date;
   formattedDate: string;
@@ -21,7 +23,7 @@ const render = (posts: {
   href: string;
   path: string;
   id: string;
-  content: unknown;
+  content: { default: Component };
 }[]) => `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
@@ -35,7 +37,7 @@ ${posts
 <guid>https://${PUBLIC_WEBSITE_HOSTNAME}${post.href}</guid>
 <title>${post.title}</title>
 <link>https://${PUBLIC_WEBSITE_HOSTNAME}${post.href}</link>
-<description><![CDATA[${post.content.default.render().html}]]></description>
+<description><![CDATA[${render(post.content.default).body}]]></description>
 <pubDate>${new Date(post.date).toUTCString()}</pubDate>
 </item>`
     )

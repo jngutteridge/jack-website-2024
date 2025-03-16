@@ -5,7 +5,7 @@ interface Link {
 
 export async function load({ url: { pathname } }) {
   const showSocialImage = pathname.split('/')[1] !== 'reviews';
-  const pageContent = await import('../../../content/home.md');
+  const pageContent = await import('../../content/home.md');
   const {
     websiteTitle,
     headerLinks,

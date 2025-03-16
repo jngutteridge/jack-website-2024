@@ -1,16 +1,19 @@
+import type { Component } from "svelte";
+
 interface FileImport {
 	metadata: { [key: string]: string };
+	default: Component;
 }
 
 export const fetchPosts = async () => {
-	const files = import.meta.glob('/../content/posts/*.md');
+	const files = import.meta.glob('../../content/posts/*.md');
 	const iterablePostFiles = Object.entries(files);
 
 	const posts = await Promise.all(
 		iterablePostFiles.map(async ([path, resolver]) => {
 			const { metadata } = (await resolver() as FileImport);
 			const date = new Date(metadata.date);
-			const slug = metadata.slug as string ?? path.slice(21, -3);
+			const slug = metadata.slug as string ?? path.slice(24, -3);
 			const href = date.toLocaleDateString('en-GB', { dateStyle: 'short' }).split('/').concat('').reverse().concat([slug, '']).join('/');
 
 			return {
@@ -22,7 +25,7 @@ export const fetchPosts = async () => {
 				categorySlug: (metadata.category as string).toLocaleLowerCase(),
 				href,
 				path,
-				id: path.slice(17, 20),
+				id: path.slice(20, 23),
 			};
 		})
 	);
@@ -33,7 +36,7 @@ export const fetchPosts = async () => {
 };
 
 export const fetchAllForFeed = async () => {
-	const files = import.meta.glob('/../content/posts/*.md');
+	const files = import.meta.glob('../../content/posts/*.md');
 	const iterablePostFiles = Object.entries(files);
 
 	const posts = await Promise.all(
@@ -53,7 +56,7 @@ export const fetchAllForFeed = async () => {
 				categorySlug: (metadata.category as string).toLocaleLowerCase(),
 				href,
 				path,
-				id: path.slice(17, 20),
+				id: path.slice(20, 23),
 				content: file,
 			};
 		})
@@ -65,7 +68,7 @@ export const fetchAllForFeed = async () => {
 }
 
 export const fetchReviews = async () => {
-	const files = import.meta.glob('/../content/reviews/*.md');
+	const files = import.meta.glob('../../content/reviews/*.md');
 	const iterablePostFiles = Object.entries(files);
 
 	const reviews = await Promise.all(
@@ -77,7 +80,7 @@ export const fetchReviews = async () => {
 				metadata.author as string || metadata.artist as string || metadata.venue as string + ' ' + metadata.location as string,
 			);
 			const date = new Date(metadata['review_date']);
-			const slug = metadata.slug as string ?? path.slice(23, -3);
+			const slug = metadata.slug as string ?? path.slice(26, -3);
 			const href = ['', 'reviews', slug, ''].join('/');
 			const categorySlug = (metadata.category as string).toLocaleLowerCase()
 
@@ -91,7 +94,7 @@ export const fetchReviews = async () => {
 				categoryHref: `/reviews/${categorySlug}/`,
 				href,
 				path,
-				id: path.slice(19, 22),
+				id: path.slice(22, 25),
 				imgSrc: `/img/reviews/${slug}.jpg`,
 			};
 		})
@@ -109,7 +112,7 @@ const getReviewTitle = (category: string, title: string, subtitle: string) => {
 
 
 export const fetchDemos = async () => {
-	const files = import.meta.glob('/../content/demos/*.md');
+	const files = import.meta.glob('../../content/demos/*.md');
 	const iterablePostFiles = Object.entries(files);
 
 	const demos = await Promise.all(
@@ -117,7 +120,7 @@ export const fetchDemos = async () => {
 			const { metadata } = (await resolver() as FileImport);
 			const title = metadata.title as string
 			const date = new Date(metadata['date']);
-			const slug = metadata.slug as string ?? path.slice(21, -3);
+			const slug = metadata.slug as string ?? path.slice(24, -3);
 			const href = ['', 'demos', slug, ''].join('/');
 
 			return {
@@ -127,7 +130,7 @@ export const fetchDemos = async () => {
 				title,
 				href,
 				path,
-				id: path.slice(17, 20),
+				id: path.slice(20, 23),
 			};
 		})
 	);

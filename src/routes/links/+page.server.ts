@@ -9,7 +9,7 @@ interface Link {
 export async function load() {
 
   try {
-    const pageContent = await import(`../../../../content/links.md`);
+    const pageContent = await import(`../../../content/links.md`);
     const { title, links, projectLinks, detail } = pageContent.metadata;
 
     return {

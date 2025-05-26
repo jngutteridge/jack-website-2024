@@ -16,5 +16,5 @@
 </div>
 
 <svelte:head>
-  <title>Reviews</title>
+  <title>Demos</title>
 </svelte:head>

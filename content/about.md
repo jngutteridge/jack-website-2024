@@ -3,7 +3,7 @@ title: About this website
 ---
 ![Jack playing an acoustic guitar at an open mic night](/img/jack-guitar-profile.jpg)
 
-I’m Jack. I’m a musician and software developer based in Leicester in the UK. This is a blog about my creative projects. I write about [music](/music), [software](/software), and [life](/life). I also post [reviews](/reviews) and [demos](/demos).
+I’m Jack. I’m a musician and software developer based in Leicester in the UK. This is a blog about my creative projects. I write about [music](/posts/music), [software](/posts/software), and [life](/posts/life). I also post [reviews](/reviews) and [demos](/demos).
 
 I am an avid writer but I don’t often post what I write. I love the idea behind [Show You Work](https://austinkleon.com/show-your-work/) by [Austin Kleon](https://austinkleon.com/about/) and will strive to present and demonstrate what I do. This website is an attempt at that.
 

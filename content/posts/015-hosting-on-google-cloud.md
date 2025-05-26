@@ -11,7 +11,7 @@ In this post I will detail my experiences with hosting on the cloud and why I ca
 
 Before migrating to the cloud I was using a VPS instance with a hosting provider I had been using for around fifteen years. I’ve loved the support I’ve had from them. Every concern or question has been addressed.
 
-I was running an older version of Ubuntu Server and [given my recent playing with SvelteKit](/2024/01/09/svelte-for-dynamic-websites/) I had come to realise the latest version of NodeJS I could run wasn’t enough to do much with.
+I was running an older version of Ubuntu Server and [given my recent playing with SvelteKit](/posts/svelte-for-dynamic-websites/) I had come to realise the latest version of NodeJS I could run wasn’t enough to do much with.
 
 When I raised a ticket to wipe and reinstall the instance I was told they no longer provide support for their VPS packages.
 

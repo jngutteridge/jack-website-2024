@@ -12,11 +12,11 @@
 <div class="max-w-[65ch] mx-auto">
   <h2 class="text-2xl pt-8 pb-6 text-slate-500">Latest posts</h2>
   <PostList>
-  {#each posts as {title, formattedDate, category, href, categorySlug}}
-    <PostLink {title} {formattedDate} {category} {href} {categorySlug} />
+  {#each posts as {title, formattedDate, category, href, categoryHref}}
+    <PostLink {title} {formattedDate} {category} {href} {categoryHref} />
   {/each}
   </PostList>
-  <a class="text-slate-500 my-6 underline block" href="/all">View all posts</a>
+  <a class="text-slate-500 my-6 underline block" href="/posts">View all posts</a>
 </div>
 <div class="max-w-[65ch] mx-auto">
   <h2 class="text-2xl pt-8 pb-6 text-slate-500">Latest Demos</h2>

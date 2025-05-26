@@ -1,5 +1,4 @@
 <script>
-  /** @type {{data: any}} */
   let { data } = $props();
   let { title, formattedDate, category, categoryHref, imgSrc } = $derived(data.review);
   let Content = $derived(data.Content);

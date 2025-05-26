@@ -14,15 +14,16 @@ export const fetchPosts = async () => {
 			const { metadata } = (await resolver() as FileImport);
 			const date = new Date(metadata.date);
 			const slug = metadata.slug as string ?? path.slice(24, -3);
-			const href = date.toLocaleDateString('en-GB', { dateStyle: 'short' }).split('/').concat('').reverse().concat([slug, '']).join('/');
-
+			const href = `/posts/${slug}/`;
+			const categoryHref = `/posts/${(metadata.category as string).toLocaleLowerCase()}/`;
+			
 			return {
 				slug,
 				date,
 				formattedDate: date.toLocaleDateString('en-GB', { dateStyle: 'long' }),
 				title: metadata.title as string,
 				category: metadata.category as string,
-				categorySlug: (metadata.category as string).toLocaleLowerCase(),
+				categoryHref,
 				href,
 				path,
 				id: path.slice(20, 23),
@@ -46,6 +47,7 @@ export const fetchAllForFeed = async () => {
 			const date = new Date(metadata.date);
 			const slug = metadata.slug as string ?? path.slice(21, -3);
 			const href = date.toLocaleDateString('en-GB', { dateStyle: 'short' }).split('/').concat('').reverse().concat([slug, '']).join('/');
+			const categoryHref = `/posts/${(metadata.category as string).toLocaleLowerCase()}/`;
 
 			return {
 				slug,
@@ -54,6 +56,7 @@ export const fetchAllForFeed = async () => {
 				title: metadata.title as string,
 				category: metadata.category as string,
 				categorySlug: (metadata.category as string).toLocaleLowerCase(),
+				categoryHref,
 				href,
 				path,
 				id: path.slice(20, 23),

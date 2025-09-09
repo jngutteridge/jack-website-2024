@@ -1,6 +1,6 @@
 import type { Component } from 'svelte';
 
-export async function load({ data: { posts, reviews, demos } }) {
+export async function load({ data: { posts, reviews, demos, projectLinks } }) {
   const pageContent = await import('../../content/home.md');
   const Content = pageContent.default as Component;
 
@@ -9,5 +9,6 @@ export async function load({ data: { posts, reviews, demos } }) {
     posts,
     reviews,
     demos,
+    projectLinks,
   };
 }

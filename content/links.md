@@ -29,29 +29,4 @@ links:
   - href: https://github.com/jngutteridge
     title: GitHub
     description: When I’m not at work I still enjoy working…
-projectLinks:
-  - href: https://polarbites.bandcamp.com/
-    title: Polar Bites
-    description: Music from myself. I one day hope to play this stuff live with a band.
-  - href: https://www.leicesteropenmics.co.uk/
-    title: Leicester Open Mics
-    description: Find an open mic in the Leicestershire area.
-  - href: https://www.instagram.com/veejogames/
-    title: Veejo Games
-    description: Alleged art and games development.
-  - href: https://www.instagram.com/calmnessmadness/
-    title: Calm & Madness
-    description: Poems in picture format.
-  - href: https://www.bespokemedia.net/
-    title: Bespoke Media
-    description: A home for my coding projects.
-  - href: https://www.kingbrick.co.uk/
-    title: King Brick
-    description: Old loud noises hoping to make new things.
-  - href: https://www.polyphonics.co.uk/
-    title: Polyphonics Choir
-    description: If you want to sing, that’s all that matters!
-  - href: https://www.countfestchorus.co.uk/
-    title: Countesthorpe Festival Chorus
-    description: Providing an opportunity to sing, learn and perform.
 ---

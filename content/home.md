@@ -21,6 +21,31 @@ footerLinks:
     href: /links
   - text: RSS feed
     href: /rss.xml
+projectLinks:
+  - href: https://open.spotify.com/artist/1IztA5EwMqSKkL88kwSvLp
+    title: Polar Bites
+    description: Music from myself. I one day hope to play this stuff live with a band.
+  - href: https://www.everythinginbetween.uk/
+    title: Everything In-between
+    description: Party and function band made to fill a dance floor.
+  - href: https://www.jacktashaduo.uk/
+    title: Open Mics with Jack & Tasha
+    description: Musical duo putting on open mics in Leicester.
+  - href: https://www.leicesteropenmics.co.uk/
+    title: Leicester Open Mics
+    description: Find an open mic in the Leicestershire area.
+  - href: https://www.instagram.com/veejogames/
+    title: Veejo Games
+    description: Alleged art and games development.
+  - href: https://www.bespokemedia.net/
+    title: Bespoke Media
+    description: A home for my coding projects.
+  - href: https://www.kingbrick.co.uk/
+    title: King Brick
+    description: Old loud noises hoping to make new things.
+  - href: https://www.countfestchorus.co.uk/
+    title: Countesthorpe Festival Chorus
+    description: Providing an opportunity to sing, learn and perform.
 ---
 # Jack Gutteridge
 

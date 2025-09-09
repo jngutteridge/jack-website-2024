@@ -10,7 +10,7 @@ export async function load({ url: { pathname } }) {
     websiteTitle,
     headerLinks,
     socialLinks,
-    footerLinks
+    footerLinks,
   } = pageContent.metadata as {
     websiteTitle: string,
     headerLinks: Link[],

@@ -9,7 +9,7 @@ I am an avid writer but I don’t often post what I write. I love the idea behin
 
 You can see what I’m up to now on [my now page](/now). You can find more of me on the internet using [my links page](/links).
 
-For my musical projects I use [SoundCloud](https://soundcloud.com/jackgutts) to upload demos. I release music on [Bandcamp](https://polarbites.bandcamp.com/) under the alias Polar Bites.
+For my musical projects I use [SoundCloud](https://soundcloud.com/jackgutts) to upload demos. I release music on [Spotify](https://open.spotify.com/artist/1IztA5EwMqSKkL88kwSvLp/) under the alias Polar Bites.
 
 For my coding project I use [GitHub](https://github.com/jngutteridge) including to [host the code for this blog](https://github.com/jngutteridge/jack-website-2024). I sometimes work under the [Bespoke Media](https://www.bespokemedia.net/) brand for small businesses and organisations.
 

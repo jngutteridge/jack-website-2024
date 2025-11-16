@@ -13,6 +13,14 @@ export async function GET({ setHeaders }) {
   return new Response(generateFeed(posts));
 }
 
+const escape = (str: string) =>
+	str
+		.replaceAll('&', '&amp;')
+		.replaceAll('<', '&lt;')
+		.replaceAll('>', '&gt;')
+		.replaceAll('"', '&quot;')
+		.replaceAll("'", '&#039;');
+
 const generateFeed = (posts: {
   slug: string;
   date: Date;
@@ -35,7 +43,7 @@ ${posts
     .map(
       (post) => `<item>
 <guid>https://${PUBLIC_WEBSITE_HOSTNAME}${post.href}</guid>
-<title>${post.title}</title>
+<title>${escape(post.title)}</title>
 <link>https://${PUBLIC_WEBSITE_HOSTNAME}${post.href}</link>
 <description><![CDATA[${render(post.content.default).body}]]></description>
 <pubDate>${new Date(post.date).toUTCString()}</pubDate>

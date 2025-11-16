@@ -13,7 +13,7 @@
   <h2 class="text-2xl pt-8 pb-6 text-slate-500">Projects</h2>
   <dl>
   {#each projectLinks as {href, title, description}}
-    <dt><a {href} class="text-slate-600 underline">{title}</a></dt>
+    <dt><a {href} class="underline">{title}</a></dt>
     <dd class="mb-4">{description}</dd>
   {/each}
   </dl>

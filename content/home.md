@@ -1,13 +1,19 @@
 ---
 websiteTitle: Jack Gutteridge
 headerLinks:
-  - text: Go to homepage
+  - text: Homepage
     href: /
-  - text: About this website
+  - text: About
     href: /about
-  - text: What I’m doing now
+  - text: Now page
     href: /now
-  - text: Contact me
+  - text: Writing
+    href: /posts
+  - text: Demos
+    href: /demos
+  - text: Reviews
+    href: /reviews
+  - text: Contact
     href: mailto:jack@kingbrick.co.uk
 socialLinks:
   - text: Bluesky
@@ -16,9 +22,11 @@ socialLinks:
     href: https://instagram.com/jackgutts
   - text: Mastodon
     href: https://hachyderm.io/@jackgutts
-footerLinks:
   - text: More links
     href: /links
+footerLinks:
+  - text: Source code
+    href: https://github.com/jngutteridge/jack-website-2024
   - text: RSS feed
     href: /rss.xml
 projectLinks:
@@ -28,9 +36,9 @@ projectLinks:
   - href: https://www.everythinginbetween.uk/
     title: Everything In-between
     description: Party and function band made to fill a dance floor.
-  - href: https://www.jacktashaduo.uk/
-    title: Open Mics with Jack & Tasha
-    description: Musical duo putting on open mics in Leicester.
+  - href: https://www.facebook.com/amydxmusic
+    title: Amy Dx
+    description: Live guitarist for alt-rock singer and songwriter Amy Dx.
   - href: https://www.leicesteropenmics.co.uk/
     title: Leicester Open Mics
     description: Find an open mic in the Leicestershire area.
@@ -49,7 +57,7 @@ projectLinks:
 ---
 # Jack Gutteridge
 
-![Jack playing an acoustic guitar at an open mic night](/img/jack-guitar-profile.jpg)
+![Jack playing an electric guitar in a dark venue with a stage light behind him](/img/jack-guitar-profile.jpg)
 
 Hello! I’m Jack Gutteridge, a musician and software developer living in Leicester in the UK.
 

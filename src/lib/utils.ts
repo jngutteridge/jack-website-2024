@@ -45,8 +45,8 @@ export const fetchAllForFeed = async () => {
 			const file = (await resolver() as FileImport);
 			const { metadata } = file;
 			const date = new Date(metadata.date);
-			const slug = metadata.slug as string ?? path.slice(21, -3);
-			const href = date.toLocaleDateString('en-GB', { dateStyle: 'short' }).split('/').concat('').reverse().concat([slug, '']).join('/');
+			const slug = metadata.slug as string ?? path.slice(24, -3);
+			const href = `/posts/${slug}/`;
 			const categoryHref = `/posts/${(metadata.category as string).toLocaleLowerCase()}/`;
 
 			return {

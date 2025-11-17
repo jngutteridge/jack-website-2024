@@ -5,4 +5,5 @@
 </div>
 <svelte:head>
   <title>Page not found</title>
+  <base href="/" />
 </svelte:head>

@@ -109,6 +109,9 @@ export const fetchReviews = async () => {
 };
 
 const getReviewTitle = (category: string, title: string, subtitle: string) => {
+	if (category === 'Game') {
+		return title;
+	}
 	const contraction = (category == 'Live') ? 'at' : 'by';
 	return `${title} ${contraction} ${subtitle}`;
 };

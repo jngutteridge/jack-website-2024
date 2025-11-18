@@ -1,5 +1,4 @@
-<script>
-  /** @type {{children?: import('svelte').Snippet}} */
+<script lang="ts">
   let { children } = $props();
 </script>
 

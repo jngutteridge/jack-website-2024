@@ -4,6 +4,7 @@ const categoryTitles: { [key: string]: string } = {
   music: 'Music reviews',
   book: 'Book reviews',
   live: 'Live reviews',
+  game: 'Game reviews',
 };
 
 export async function load({ params: { list } }) {

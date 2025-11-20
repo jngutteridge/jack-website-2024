@@ -1,22 +1,24 @@
 <script lang="ts">
   import '../style.css';
   import { page } from '$app/state';
+  import { afterNavigate } from '$app/navigation';
   
   let { data, children } = $props();
   const { websiteTitle, headerLinks, socialLinks, footerLinks } = data;
   let { showSocialImage } = $derived(data);
   let navHidden = $state(true);
+  let mainElement: HTMLElement;
 
-  $effect(() => {
-    page.url.pathname;
+  afterNavigate(() => {
     navHidden = true;
+    mainElement.scrollTop = 0;
   });
 </script>
 {#if showSocialImage}
   <img src="/img/jack-guitar-profile.jpg" alt="" class="hidden"/>
 {/if}
 <div class="flex flex-col lg:flex-row h-screen font-sans">
-  <main class="py-4 px-6 grow lg:overflow-y-auto">
+  <main bind:this={mainElement} class="py-4 px-6 grow lg:overflow-y-auto">
     {@render children?.()}
   </main>
   <header class="-order-1 flex flex-col py-4 px-6 gap-6 bg-slate-200 lg:w-80">

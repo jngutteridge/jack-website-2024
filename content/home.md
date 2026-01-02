@@ -7,6 +7,8 @@ headerLinks:
     href: /about
   - text: Now page
     href: /now
+  - text: Weekly posts
+    href: /weekly
   - text: Writing
     href: /posts
   - text: Demos

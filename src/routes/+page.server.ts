@@ -1,4 +1,4 @@
-import { fetchPosts, fetchReviews, fetchDemos } from '$lib/utils';
+import { fetchPosts, fetchWeeklyPosts, fetchReviews, fetchDemos } from '$lib/utils';
 
 interface Link {
   title: string;
@@ -16,6 +16,7 @@ export async function load() {
 
 	return {
 		posts: ((await fetchPosts()).slice(0, 6)),
+    weeklyPosts: ((await fetchWeeklyPosts()).slice(0,4)),
 		reviews: ((await fetchReviews()).slice(0, 4)),
 		demos: ((await fetchDemos()).slice(0, 4)),
 		projectLinks,

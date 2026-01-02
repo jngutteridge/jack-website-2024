@@ -1,7 +1,7 @@
-import { fetchPosts } from '$lib/utils';
+import { fetchWeeklyPosts } from '$lib/utils';
 
 export async function load() {
-  const posts = await fetchPosts();
+  const posts = await fetchWeeklyPosts();
 
   const postsByYear = posts.reduce((acc, post) => {
     const year = new Date(post.date).getFullYear().toString();

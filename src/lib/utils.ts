@@ -116,7 +116,6 @@ const getReviewTitle = (category: string, title: string, subtitle: string) => {
 	return `${title} ${contraction} ${subtitle}`;
 };
 
-
 export const fetchDemos = async () => {
 	const files = import.meta.glob('../../content/demos/*.md');
 	const iterablePostFiles = Object.entries(files);
@@ -142,6 +141,32 @@ export const fetchDemos = async () => {
 	);
 
 	return demos.sort((a, b) => {
+		return b.date.valueOf() - a.date.valueOf();
+	});
+};
+
+export const fetchWeeklyPosts = async () => {
+	const files = import.meta.glob('../../content/weekly/*.md');
+	const iterablePostFiles = Object.entries(files);
+
+	const weekly = await Promise.all(
+		iterablePostFiles.map(async ([path, resolver]) => {
+			const { metadata } = (await resolver() as FileImport);
+			const date = new Date(metadata['date']);
+			const slug = metadata.slug as string ?? path.slice(21, -3);
+			const href = `/weekly/${slug}/`
+
+			return {
+				slug,
+				date,
+				formattedDate: date.toLocaleDateString('en-GB', { dateStyle: 'long' }),
+				href,
+				path,
+			};
+		})
+	);
+
+	return weekly.sort((a, b) => {
 		return b.date.valueOf() - a.date.valueOf();
 	});
 };

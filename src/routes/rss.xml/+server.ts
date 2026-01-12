@@ -22,15 +22,9 @@ const escape = (str: string) =>
 		.replaceAll("'", '&#039;');
 
 const generateFeed = (posts: {
-  slug: string;
   date: Date;
-  formattedDate: string;
   title: string;
-  category: string;
-  categorySlug: string;
   href: string;
-  path: string;
-  id: string;
   content: { default: Component };
 }[]) => `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">

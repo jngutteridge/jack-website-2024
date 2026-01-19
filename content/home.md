@@ -38,7 +38,7 @@ projectLinks:
   - href: https://www.everythinginbetween.uk/
     title: Everything In-between
     description: Party and function band made to fill a dance floor.
-  - href: https://www.facebook.com/amydxmusic
+  - href: https://www.amydx.uk/
     title: Amy Dx
     description: Live guitarist for alt-rock singer and songwriter Amy Dx.
   - href: https://www.leicesteropenmics.co.uk/

@@ -7,10 +7,10 @@
   let { data } = $props();
   const { posts, weeklyPosts, reviews, demos, Content, websiteTitle, projectLinks } = data;
 </script>
-<article class="home max-w-[65ch] mx-auto text-pretty">
+<article class="home max-w-copy mx-auto text-pretty">
   <Content />
 </article>
-<div class="max-w-[65ch] mx-auto">
+<div class="max-w-copy mx-auto">
   <h2 class="text-2xl pt-8 pb-6 text-slate-500">Projects</h2>
   <dl>
   {#each projectLinks as {href, title, description}}
@@ -19,7 +19,7 @@
   {/each}
   </dl>
 </div>
-<div class="max-w-[65ch] mx-auto">
+<div class="max-w-copy mx-auto">
   <h2 class="text-2xl pt-8 pb-2 text-slate-500">Weekly posts</h2>
   <p class="pb-4">A list of personal weekly retrospectives</p>
   <WeeklyPostList>
@@ -29,7 +29,7 @@
   </WeeklyPostList>
   <a class="text-slate-500 my-6 underline block" href="/weekly">View all weekly posts</a>
 </div>
-<div class="max-w-[65ch] mx-auto">
+<div class="max-w-copy mx-auto">
   <h2 class="text-2xl pt-8 pb-6 text-slate-500">Latest posts</h2>
   <PostList>
   {#each posts as {title, formattedDate, category, href, categoryHref}}
@@ -38,7 +38,7 @@
   </PostList>
   <a class="text-slate-500 my-6 underline block" href="/posts">View all posts</a>
 </div>
-<div class="max-w-[65ch] mx-auto">
+<div class="max-w-copy mx-auto">
   <h2 class="text-2xl pt-8 pb-6 text-slate-500">Latest Demos</h2>
   <DemosList>
   {#each demos as {title, formattedDate, href}}
@@ -47,7 +47,7 @@
   </DemosList>
   <a class="text-slate-500 my-6 underline block" href="/demos">View all demos</a>
 </div>
-<div class="max-w-[65ch] mx-auto">
+<div class="max-w-copy mx-auto">
   <h2 class="text-2xl pt-8 pb-6 text-slate-500">Latest reviews</h2>
   <ReviewList>
   {#each reviews as {title, formattedDate, category, href, categoryHref, imgSrc}}

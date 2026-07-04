@@ -7,7 +7,7 @@
 <article class="content prose mx-auto">
   <Content />
 </article>
-<div class="max-w-[65ch] mx-auto">
+<div class="max-w-copy mx-auto">
   <a class="text-slate-500 my-6 underline block" href="/weekly">Go to all weekly posts</a>
 </div>
 

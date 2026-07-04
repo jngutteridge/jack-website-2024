@@ -6,7 +6,7 @@
   let count = $derived(posts.length);
   let pageCategory  = $derived(data.categorySlug);
 </script>
-<div class="max-w-[65ch] mx-auto">
+<div class="max-w-copy mx-auto">
   <h1 class="text-3xl pt-6 text-center max-w-[35ch] mx-auto text-balance">{categoryTitle}</h1>
   <span class="text-slate-500 text-sm pt-2 pb-6 text-center block">{count} posts</span>
   <PostList>

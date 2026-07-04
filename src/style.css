@@ -2,11 +2,13 @@
 @plugin '@tailwindcss/typography';
 
 @theme {
-  --font-sans: 'Arial', 'Helvetica', sans-serif;
+  --font-sans: 'Source Sans 3', sans-serif;
+  --font-heading: 'Plus Jakarta Sans', sans-serif;
 }
 
 @layer base {
   h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
     font-weight: normal;
   }
 }
@@ -42,4 +44,9 @@ article.home {
   }
 
   @apply prose-h1:font-normal prose-h2:font-normal prose-h3:font-normal prose-h4:font-normal;
+  @apply max-w-[75ch];
+}
+
+.max-w-copy {
+  @apply max-w-[75ch];
 }

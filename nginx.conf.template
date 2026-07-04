@@ -1,0 +1,30 @@
+server {
+    listen ${PORT};
+    server_name localhost;
+
+    location / {
+        root /usr/share/nginx/html;
+        index index.html index.htm;
+        
+        # SvelteKit static routing support:
+        # 1. Try serving request as a file directly (e.g. static assets, images)
+        # 2. Try serving request as a directory (looks for index.html inside it)
+        # 3. Try serving request with .html extension appended (for routes pre-rendered to files)
+        # 4. Fall back to the 404 page
+        try_files $uri $uri/ $uri.html /404.html;
+    }
+
+    # Custom 404 page configuration
+    error_page 404 /404.html;
+    location = /404.html {
+        root /usr/share/nginx/html;
+        internal;
+    }
+
+    # Enable gzip compression for better performance
+    gzip on;
+    gzip_vary on;
+    gzip_proxied any;
+    gzip_comp_level 6;
+    gzip_types text/plain text/css text/xml application/json application/javascript application/rss+xml application/atom+xml image/svg+xml;
+}

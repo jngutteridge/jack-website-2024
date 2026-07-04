@@ -1,17 +1,18 @@
 ---
 title: What I’m doing now
-detail: Last updated April 2026
+detail: Last updated July 2026
 ---
 - Living in Leicestershire with my beautiful fiancée Amy and our dog Izzy
 - Working remotely and leading projects as a front-end developer
 - Attending open mics around Leicester, Hinckley and Loughborough
 - Playing in my new function band [Everything In-between](https://www.everythinginbetween.uk/)
 - Playing as the live guitarist for [Amy Dx](https://www.facebook.com/amydxmusic/)
-- Enjoying coding websites, apps, and writing for this website
+- Enjoying coding websites and apps for various projects
+- Attempting to write for this website
 
 ## What I’m planning
 
-- [I have released my second album Connections](/posts/connections-by-polar-bites/) under the Polar Bites project. I aim to rekindle my inner rockstar and write more music.
+- [I have released my second album Connections](/posts/connections-by-polar-bites/) under the Polar Bites project. I am slowly progressing through my third album, joyfully referred to as Anger.
 - Reading more books. I have recently finished [Tiny Experiments by Anne-Laure Le Cunff](/reviews/tiny-experiments/) and Burnout by Emily and Amelia Nagoski. I am currently reading The Let Them Theory by Mel Robbins.
 - Playing video games. I’ve been enjoying playing Clair Obscur: Expedition 33 and the incredible Deltarune.
 - Designing video games. I have a few ideas and I’m currently working my way around the Godot game engine.

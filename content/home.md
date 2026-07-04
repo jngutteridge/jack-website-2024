@@ -50,7 +50,7 @@ projectLinks:
     title: Polar Bites
     description: Music from myself. I one day hope to play this stuff live with a band.
   - href: https://www.everythinginbetween.uk/
-    title: Everything In-between
+    title: Everything In-Between
     description: Party and function band made to fill a dance floor.
   - href: https://www.amydx.uk/
     title: Amy Dx
@@ -78,6 +78,6 @@ projectLinks:
 
 Hello! I’m Jack Gutteridge, a musician and software developer living in Leicester in the UK.
 
-This website is a space for me to write about [music](/posts/music), [software](/posts/software), and [life](/posts/life). I also post [reviews](/reviews) and [demos](/demos).
+This website is a space for me to write. I categorise my writing [music](/posts/music), [software](/posts/software), and [life](/posts/life). I also post brief [reviews](/reviews) of things I enjoy.
 
-You can read more about me and this website on [the about page](/about) and see what I’m up to at the moment on [my now page](/now).
+You can read more about me and this website [the about page](/about) and see what I’m up to at the moment [my now page](/now).

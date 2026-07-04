@@ -10,5 +10,5 @@
   }: Props = $props();
 </script>
 <li>
-  <h2 class="text-pretty underline"><a {href}>Post for the week of {formattedDate}</a></h2>
+  <h2 class="text-pretty underline"><a {href}>Week of {formattedDate}</a></h2>
 </li>

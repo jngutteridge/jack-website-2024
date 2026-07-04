@@ -21,4 +21,4 @@ export async function load() {
 		demos: ((await fetchDemos()).slice(0, 4)),
 		projectLinks,
 	};
-};
+}

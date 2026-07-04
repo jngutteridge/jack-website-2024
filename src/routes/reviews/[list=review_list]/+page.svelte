@@ -1,10 +1,10 @@
 <script>
 	import { ReviewLink, ReviewList } from '$lib/components/review-list';
 
-  let { data } = $props();
-  let { title, reviews, slug } = $derived(data);
-  let count = $derived(reviews.length);
-  const showCategory = false;
+	let { data } = $props();
+	let { title, reviews } = $derived(data);
+	let count = $derived(reviews.length);
+	const showCategory = false;
 </script>
 <div class="max-w-copy mx-auto">
   <h1 class="text-3xl pt-6 text-center max-w-[35ch] mx-auto text-balance">{title}</h1>

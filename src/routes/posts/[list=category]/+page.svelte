@@ -10,8 +10,8 @@
   <h1 class="text-3xl pt-6 text-center max-w-[35ch] mx-auto text-balance">{categoryTitle}</h1>
   <span class="text-slate-500 text-sm pt-2 pb-6 text-center block">{count} posts</span>
   <PostList>
-    {#each posts as {title, formattedDate, category, href, categorySlug}}
-      <PostLink {title} {category} {formattedDate} {href} {categorySlug} showCategory={pageCategory === 'all'} />
+    {#each posts as {title, formattedDate, category, href, categoryHref}}
+      <PostLink {title} {category} {formattedDate} {href} {categoryHref} showCategory={pageCategory === 'all'} />
     {/each}
   </PostList>
   <a class="text-slate-500 my-6 underline block" href="/">Go back to homepage</a>

@@ -11,4 +11,4 @@ export async function load({ params: { slug } }) {
   }
 
   return { review };
-};
+}

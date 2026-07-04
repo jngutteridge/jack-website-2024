@@ -8,4 +8,4 @@ export async function load({ params: { slug } }) {
   if (!post) throw error(404, 'Page not found');
 
   return { post };
-};
+}

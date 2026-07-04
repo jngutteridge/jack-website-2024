@@ -98,7 +98,7 @@ export const fetchAllForFeed = async () => {
 			const formattedDate = date.toLocaleDateString('en-GB', { dateStyle: 'long' });
 			const slug = metadata.slug as string ?? path.slice(21, -3);
 			const href = `/weekly/${slug}/`
-		  const title = `Weekly post: ${formattedDate}`;
+			const title = `Weekly post: ${formattedDate}`;
 			const publishedDate = new Date(metadata['published']);
 
 			return {

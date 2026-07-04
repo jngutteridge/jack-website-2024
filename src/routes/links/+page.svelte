@@ -7,7 +7,7 @@
   <span class="text-slate-500 text-sm pt-2 pb-6 text-center block">{ detail }</span>
   <dl>
   {#each links as {href, title, description}}
-    <dt><a {href} class="text-slate-600 underline">{title}</a></dt>
+    <dt><a {href} class="text-slate-600 font-heading underline">{title}</a></dt>
     <dd class="mb-4">{description}</dd>
   {/each}
   </dl>

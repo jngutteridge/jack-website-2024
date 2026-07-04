@@ -35,17 +35,17 @@
     <nav class="flex-col text-slate-600 gap-6 flex lg:flex" class:hidden={navHidden}>
       <ul class="flex flex-col gap-2">
         {#each headerLinks as {text, href}}
-          <li><a {href} class:underline={href === '/' ? page.url.pathname === '/' : page.url.pathname.startsWith(href)}>{text}</a></li>
+          <li><a {href} class="font-heading" class:underline={href === '/' ? page.url.pathname === '/' : page.url.pathname.startsWith(href)}>{text}</a></li>
         {/each}
       </ul>
       <ul class="flex flex-col gap-2">
         {#each socialLinks as {text, href}}
-          <li><a {href} rel="me">{text}</a></li>
+          <li><a {href} rel="me" class="font-heading">{text}</a></li>
         {/each}
       </ul>
       <ul class="flex flex-col gap-2">
         {#each footerLinks as {text, href}}
-          <li><a {href} data-sveltekit-reload={href === '/rss.xml'}>{text}</a></li>
+          <li><a {href} class="font-heading" data-sveltekit-reload={href === '/rss.xml'}>{text}</a></li>
         {/each}
       </ul>
     </nav>

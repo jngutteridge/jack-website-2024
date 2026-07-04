@@ -3,34 +3,48 @@ websiteTitle: Jack Gutteridge
 headerLinks:
   - text: Homepage
     href: /
+    icon: home
   - text: About
     href: /about
+    icon: user
   - text: Now page
     href: /now
+    icon: clock
   - text: Weekly posts
     href: /weekly
+    icon: calendar
   - text: Writing
     href: /posts
+    icon: edit-3
   - text: Demos
     href: /demos
+    icon: code
   - text: Reviews
     href: /reviews
+    icon: star
   - text: Contact
     href: mailto:jack@kingbrick.co.uk
+    icon: mail
 socialLinks:
   - text: Bluesky
     href: https://bsky.app/profile/jng.me.uk
+    icon: bluesky
   - text: Instagram
     href: https://instagram.com/jackgutts
+    icon: instagram
   - text: Mastodon
     href: https://hachyderm.io/@jackgutts
+    icon: mastodon
   - text: More links
     href: /links
+    icon: link
 footerLinks:
   - text: Source code
     href: https://github.com/jngutteridge/jack-website-2024
+    icon: github
   - text: RSS feed
     href: /rss.xml
+    icon: rss
 projectLinks:
   - href: https://open.spotify.com/artist/1IztA5EwMqSKkL88kwSvLp
     title: Polar Bites
@@ -57,6 +71,7 @@ projectLinks:
     title: Countesthorpe Festival Chorus
     description: Providing an opportunity to sing, learn and perform.
 ---
+
 # Jack Gutteridge
 
 ![Jack playing an electric guitar in a dark venue with a stage light behind him](/img/jack-guitar-profile.jpg)
